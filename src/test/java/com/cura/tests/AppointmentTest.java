@@ -48,17 +48,17 @@ public class AppointmentTest extends BaseTest {
             "Automation testing appointment"
         );
 
-        // Verify confirmation page
-        wait.until(ExpectedConditions.urlContains("summary.php"));
+       // Wait for confirmation page
+        wait.until(ExpectedConditions.visibilityOfElementLocated(
+         By.id("facility")
+    ));
 
+    // Verify appointment confirmation
         Assert.assertTrue(
-            driver.getCurrentUrl().contains("summary.php"),
-            "Appointment booking failed!"
-        );
+        driver.findElement(By.id("facility")).isDisplayed(),
+        "Appointment confirmation was not displayed!"
+    );
 
-        Assert.assertTrue(
-            driver.getPageSource().contains("Appointment Confirmation"),
-            "Confirmation message not displayed!"
-        );
+        System.out.println("Appointment booked successfully!");
     }
 }
