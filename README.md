@@ -32,6 +32,12 @@ The project covers the following functionalities:
 - **Appointment History:** Validate previously scheduled appointments.
 - **Logout Testing:** Verify successful logout functionality.
 
+ ## Automated Test Scenarios
+
+- Login functionality
+- Appointment booking
+- Booking history verification
+
 ## Framework Design
 
 The project follows the Page Object Model (POM) to maintain a structured, reusable, and maintainable automation framework.
