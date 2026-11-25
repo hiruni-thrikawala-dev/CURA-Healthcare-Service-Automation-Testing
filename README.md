@@ -16,6 +16,12 @@ The project aims to validate key healthcare appointment management functionaliti
 - Git & GitHub
 - Eclipse IDE
 
+ ## Automated Test Scenarios
+
+- Login functionality
+- Appointment booking
+- Booking history verification
+
 ## Application Under Test
 
 **Website:** https://katalon-demo-cura.herokuapp.com/
